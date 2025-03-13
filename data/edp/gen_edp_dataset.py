@@ -77,6 +77,9 @@ def main(args: Optional[Sequence[str]] = None) -> None:
     dataframe = pd.concat(dataframes, ignore_index=True)
     del dataframes
 
+    # Sort dataframe
+    dataframe = dataframe.sort_values(by=["Timestamp", "Turbine_ID"])
+
     # Split datasets per year and turbines
     tqdm.write("Splitting datasets…")
     years = pd.unique(dataframe["Timestamp"].dt.year)
