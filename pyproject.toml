@@ -8,7 +8,15 @@ authors = [
     { name = "Jonathan Tremesaygues", email = "jonathan.tremesaygues@sereema.com" },
 ]
 requires-python = ">=3.13"
-dependencies = ["marimo>=0.11.19", "pandas>=2.2.3", "plotly>=6.0.0"]
+dependencies = [
+    "marimo>=0.11.19",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.3",
+    "pandas>=2.2.3",
+    "plotly>=6.0.0",
+    "polars>=1.24.0",
+    "scipy>=1.15.2",
+]
 
 [dependency-groups]
 dev = ["openpyxl>=3.1.5", "requests>=2.32.3", "tqdm>=4.67.1"]
