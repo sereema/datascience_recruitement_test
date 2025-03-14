@@ -188,7 +188,7 @@ def _(mo):
         r"""
         # Task 5 - Seasonal Wind Direction Analysis for Wind Turbine T06
 
-        Your objective is to create four polar bar plots, one for each season (Winter, Spring, Summer, and Fall), showing the frequency distribution of wind direction for wind turbine T06.
+        Your objective is to create four polar bar plots, one for each season (Winter, Spring, Summer, and Fall), showing the frequency distribution of wind direction for wind turbine T06. Use 30° bins for the wind direction.
 
         Output exemple:
         """
