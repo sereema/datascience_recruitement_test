@@ -93,7 +93,7 @@ def _(mo):
     return
 
 
-@app.cell(hide_code=True)
+@app.cell
 def _():
     # Your response for task1
     return
@@ -121,7 +121,7 @@ def _(mo):
     return
 
 
-@app.cell(hide_code=True)
+@app.cell
 def _():
     # Your response for task 2
     return
@@ -150,7 +150,7 @@ def _(mo):
     return
 
 
-@app.cell(hide_code=True)
+@app.cell
 def _():
     # Your response for task 3
     return
@@ -176,6 +176,12 @@ def _(mo):
     return
 
 
+@app.cell
+def _():
+    # Your response for task 4
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(
@@ -196,7 +202,7 @@ def _(mo):
     return
 
 
-@app.cell(hide_code=True)
+@app.cell
 def _():
     # Your response for task 5
     return
