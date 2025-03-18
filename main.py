@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.11.20"
+__generated_with = "0.11.21"
 app = marimo.App(width="medium")
 
 
@@ -16,6 +16,7 @@ def _():
     import plotly.graph_objects as go
     import polars as pl
     import scipy.stats as stats
+
     return datetime, go, mo, np, pd, pl, plt, px, stats, timedelta, timezone
 
 
@@ -63,7 +64,7 @@ def _(mo):
         01 01 2018 01:20,463.651214599609,5.58462905883789,493.677652137077,253.480697631835
         ```
 
-        For this task, you have to load the essential data from SCADA files into a DataFrame for a subsequent analysis of wind turbine performance.
+        For this task, you have to load the essential data from SCADA files into a DataFrame (or equivalent) for a subsequent analysis of wind turbine performance.
 
         You will have to use the SCADA files from the `data/edp/` folder:
 
