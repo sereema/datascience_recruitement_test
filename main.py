@@ -93,25 +93,9 @@ def _(mo):
 
 
 @app.cell
-def _(np, pd):
-    import glob 
-    from pprint import pprint
-
-
-    path="data/edp/*.csv"
-    paths = glob.glob(path)
-
-    columns = ["Turbine_ID", "Timestamp", "Amb_WindSpeed_Avg", "Amb_WindDir_Abs_Avg", "Prod_LatestAvg_TotActPwr"]
-    dfa = np.array([], ndmin=8)
-
-    for path in paths:
-        np.append(dfa, pd.read_csv(path, usecols=columns))
-   
-
-    df = pd.DataFrame(dfa)
-
-    pprint(df)
-    return columns, df, dfa, glob, path, paths, pprint
+def _():
+    # Your response for task1
+    return
 
 
 @app.cell(hide_code=True)
