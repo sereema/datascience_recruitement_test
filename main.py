@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.11.19"
+__generated_with = "0.11.20"
 app = marimo.App(width="medium")
 
 
@@ -16,7 +16,6 @@ def _():
     import plotly.graph_objects as go
     import polars as pl
     import scipy.stats as stats
-
     return datetime, go, mo, np, pd, pl, plt, px, stats, timedelta, timezone
 
 
@@ -64,9 +63,9 @@ def _(mo):
         01 01 2018 01:20,463.651214599609,5.58462905883789,493.677652137077,253.480697631835
         ```
 
-        This task involves loading essential data from SCADA files into a DataFrame for subsequent analysis of wind turbine performance.
+        For this task, you have to load the essential data from SCADA files into a DataFrame for a subsequent analysis of wind turbine performance.
 
-        You must use the SCADA files from the `data/edp/` folder:
+        You will have to use the SCADA files from the `data/edp/` folder:
 
         - scada_T01_2016.csv
         - scada_T01_2017.csv
@@ -94,9 +93,25 @@ def _(mo):
 
 
 @app.cell
-def _():
-    # Your response for task1
-    return
+def _(np, pd):
+    import glob 
+    from pprint import pprint
+
+
+    path="data/edp/*.csv"
+    paths = glob.glob(path)
+
+    columns = ["Turbine_ID", "Timestamp", "Amb_WindSpeed_Avg", "Amb_WindDir_Abs_Avg", "Prod_LatestAvg_TotActPwr"]
+    dfa = np.array([], ndmin=8)
+
+    for path in paths:
+        np.append(dfa, pd.read_csv(path, usecols=columns))
+   
+
+    df = pd.DataFrame(dfa)
+
+    pprint(df)
+    return columns, df, dfa, glob, path, paths, pprint
 
 
 @app.cell(hide_code=True)
