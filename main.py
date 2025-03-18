@@ -106,7 +106,7 @@ def _(mo):
 
         A power curve is a graphical representation of a wind turbine's power output as a function of wind speed. Visualizing the power curve allows for quick assessment of turbine performance and identification of potential anomalies.
 
-        Your objective is to generate a scatter plot of active power versus wind speed for the  wind turbine T01 over the period \[2016-12-01; 2017-02-01\[.
+        Your objective is to generate a scatter plot of active power versus wind speed for the  wind turbine T01 over the period \[2016-12-21; 2017-01-08\[.
 
         Output exemple:
         """
