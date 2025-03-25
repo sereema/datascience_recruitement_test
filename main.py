@@ -77,9 +77,9 @@ def _(mo):
         - scada_T11_2016.csv
         - scada_T11_2017.csv
 
-        Each file contains 1 year of data from an Enercon E33 wind turbine.
+        Each file contains 1 year of data from an Enercon E82 wind turbine.
 
-        The extracted data should include only turbine ID, timestamp, average wind speed, absolute average wind direction, and total active power for the 2 years and 4 turbines.
+        The extracted data should include only turbine ID, timestamp, average wind speed, absolute average wind direction, and average produced power for the 2 years and 4 turbines.
 
         Output exemple:
         """
